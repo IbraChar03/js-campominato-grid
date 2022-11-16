@@ -4,7 +4,7 @@ let button = document.getElementById("btn");
  function(){
     let difficolta = document.getElementById("diff").value;
     let main = document.querySelector("main")
-    main.style.backgroundColor = "aqua";
+    main.style.backgroundColor = "#D6E4E5";
 
     let container = document.getElementById("container");
 
@@ -13,12 +13,13 @@ let button = document.getElementById("btn");
         for(i = 1; i <= 100; i++ ){
             let elemento = nuovoElemento();
             elemento.style.width="calc(10% - 10px)";
-            elemento.innerHTML = i;
+            let num = elemento.innerHTML = i;
             container.append(elemento);
              
             elemento.addEventListener("click",
              function(){
                 elemento.classList.toggle("color");
+                console.log(num);
                 
              }
             
@@ -34,12 +35,13 @@ let button = document.getElementById("btn");
         for(i = 1; i <= 81; i++ ){
             let elemento = nuovoElemento();
             elemento.style.width="calc(11% - 10px)";
-            elemento.innerHTML = i;
+            let num = elemento.innerHTML = i;
             container.append(elemento);
              
             elemento.addEventListener("click",
              function(){
                 elemento.classList.toggle("color");
+                console.log(num);
 
              }
             
@@ -54,12 +56,13 @@ let button = document.getElementById("btn");
         for(i = 1; i <= 49; i++ ){
             let elemento = nuovoElemento();
             elemento.style.width="calc(13% - 10px)";
-            elemento.innerHTML = i;
+            let num = elemento.innerHTML = i;
             container.append(elemento);
              
             elemento.addEventListener("click",
              function(){
                 elemento.classList.toggle("color");
+                console.log(num);
              }
             
             );
