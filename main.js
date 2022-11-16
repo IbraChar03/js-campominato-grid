@@ -2,8 +2,10 @@ let button = document.getElementById("btn");
 
  button.addEventListener("click",
  function(){
-     let container = document.getElementById("container");
-     container.style.backgroundColor = "aqua";
+    let main=document.querySelector("main")
+    main.style.backgroundColor = "aqua";
+
+    let container = document.getElementById("container");
 
      for(i = 1; i <= 100; i++ ){
          let elemento = nuovoElemento();
