@@ -18,16 +18,15 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                elemento.classList.add("color");
+                elemento.classList.toggle("color");
                 console.log(num);
                 
              }
-            
+             
             );
             
         }  
       
-   
     }
     
     else if (difficolta === "Medio"){
