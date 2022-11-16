@@ -18,7 +18,7 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                elemento.classList.toggle("color");
+                elemento.classList.add("color");
                 console.log(num);
                 
              }
