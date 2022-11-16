@@ -9,17 +9,18 @@ let button = document.getElementById("btn");
     let container = document.getElementById("container");
 
     if (difficolta === "Facile"){
-        document.getElementById("container").innerHTML = ""
+        document.getElementById("container").innerHTML = "";
         for(i = 1; i <= 100; i++ ){
+            var clicked=false;
             let elemento = nuovoElemento();
             elemento.style.width="calc(10% - 10px)";
-            let num = elemento.innerHTML = i;
+            let num = elemento.innerHTML=i;
             container.append(elemento);
              
             elemento.addEventListener("click",
              function(){
-                elemento.classList.toggle("color");
-                console.log(num);
+                elemento.classList.add("color");
+                    console.log(num); 
                 
              }
              
@@ -30,7 +31,7 @@ let button = document.getElementById("btn");
     }
     
     else if (difficolta === "Medio"){
-        document.getElementById("container").innerHTML = ""
+        document.getElementById("container").innerHTML = "";
         for(i = 1; i <= 81; i++ ){
             let elemento = nuovoElemento();
             elemento.style.width="calc(11% - 10px)";
@@ -39,7 +40,7 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                elemento.classList.toggle("color");
+                elemento.classList.add("color");
                 console.log(num);
 
              }
@@ -51,7 +52,7 @@ let button = document.getElementById("btn");
     }
 
     else if (difficolta === "Difficile"){
-        document.getElementById("container").innerHTML = ""
+        document.getElementById("container").innerHTML = "";
         for(i = 1; i <= 49; i++ ){
             let elemento = nuovoElemento();
             elemento.style.width="calc(13% - 10px)";
@@ -60,7 +61,7 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                elemento.classList.toggle("color");
+                elemento.classList.add("color");
                 console.log(num);
              }
             
